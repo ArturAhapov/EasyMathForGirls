@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.arturagapov.easymathforgirls"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    //compile 'com.facebook.android:audience-network-sdk:4.23.0'
+    compile 'com.facebook.android:audience-network-sdk:4.+'
+    //compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.firebase:firebase-appindexing:11.0.4'//Миграция на последние версии API
+    compile 'com.google.firebase:firebase-core:11.0.4'
+    compile 'com.google.firebase:firebase-ads:11.0.4'
+    compile 'com.google.firebase:firebase-crash:11.0.4'//Firebase Debugging
+    compile 'com.google.firebase:firebase-perf:11.0.4'//Firebase User Tracking
+    compile 'com.google.firebase:firebase-config:11.0.4'//Firebase Remote config
+    compile 'com.google.firebase:firebase-messaging:11.0.4'
+    //Mediation
+    compile 'com.facebook.android:audience-network-sdk:4.25.0'
+    compile 'com.google.ads.mediation:facebook:4.25.0.0'
+    compile('com.mopub:mopub-sdk:4.15.0@aar') {
+        transitive = true
+    }
+    compile 'com.google.ads.mediation:mopub:4.15.0.0'
+
+    //compile 'com.google.android.gms:play-services-auth:9.8.0'
+    //compile 'com.google.android.gms:play-services-base:9.8.0'
+    //compile 'com.google.android.gms:play-services-identity:9.8.0'
+    //compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    //compile 'com.google.android.gms:play-services-appinvite:9.8.0'
+    //compile 'com.google.android.gms:play-services-analytics:9.8.0'
+    //compile 'com.google.android.gms:play-services-contextmanager:9.4.0'
+    //compile 'com.google.android.gms:play-services-gcm:9.8.0'
+    //compile 'com.google.android.gms:play-services-games:9.8.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

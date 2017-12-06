@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                    android:type="radial"
+                    android:endColor="@color/new_color_sky_MAIN"
+                    android:centerColor="@color/new_color_sky_MAIN"
+                    android:startColor="@color/new_color_sky_SOFT"
+                    android:centerX="0.3"
+                    android:centerY="0.3"
+                    android:gradientRadius="500"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/board"
+        tools:context="com.arturagapov.easymathforgirls.QuizActivity">
+    <TextView
+            android:id="@+id/quiz_practice"
+            android:text="@string/practice"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPinkEmpty"
+            android:textSize="@dimen/titleText"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:id="@+id/math_action_layout"
+            android:orientation="horizontal"
+            android:layout_below="@+id/quiz_practice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/quiz_difficulty"
+                android:text="@string/practice"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPinkEmpty"
+                android:textSize="@dimen/titleText"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/quiz_math_action"
+                android:text="@string/practice"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPinkEmpty"
+                android:textSize="@dimen/titleText"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/math_action_layout"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/practiceprogressBar"/>
+
+    <LinearLayout
+            android:id="@+id/score_layout"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/practiceprogressBar"
+            android:layout_centerVertical="true">
+        <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPinkEmpty"
+                    android:text="@string/score" android:textSize="@dimen/titleText"/>
+            <TextView
+                    android:id="@+id/score_is"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorPinkEmpty"
+                    android:text="0" android:textSize="@dimen/titleText"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+            android:id="@+id/timer"
+            android:layout_below="@+id/practiceprogressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPinkEmpty"
+            android:textColor="@color/colorWhite"
+            android:text="00:00" android:textSize="@dimen/titleText"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/score_layout"
+            android:layout_above="@+id/buttons"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/quiz_question"
+                android:text="1 + 2 = "
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPinkEmpty"
+                android:textSize="@dimen/lesson3Text"
+                android:textStyle="bold"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView
+
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="3"
+                android:textStyle="bold"
+                android:textSize="@dimen/lesson3Text"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/quiz_answer"
+                android:visibility="invisible"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView
+            android:src="@drawable/new_bottom_clouds_back"
+            android:layout_above="@+id/buttons"
+            android:scaleType="fitEnd"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <GridLayout
+            android:id="@+id/buttons"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:columnCount="3">
+        <Button
+                android:layout_width="@dimen/quiz_button_width"
+                android:layout_height="@dimen/quiz_button_height"
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:textSize="@dimen/quiz_button_textsize"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/quizbuttonred"
+                android:id="@+id/quizbutton1"
+                android:onClick="onClickQButton1"
+                android:layout_row="0"
+                android:layout_column="0"/>
+        <Button
+                android:layout_width="@dimen/quiz_button_width"
+                android:layout_height="@dimen/quiz_button_height"
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"
+                android:textSize="@dimen/quiz_button_textsize"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/quizbuttonblue"
+                android:id="@+id/quizbutton2"
+                android:onClick="onClickQButton2"
+                android:layout_row="0"
+                android:layout_column="2"/>
+        <Button
+                android:layout_width="@dimen/quiz_button_width"
+                android:layout_height="@dimen/quiz_button_height"
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textStyle="bold"
+                android:textSize="@dimen/quiz_button_textsize"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/quizbuttongreen"
+                android:id="@+id/quizbutton3"
+                android:onClick="onClickQButton3"
+                android:layout_row="1"
+                android:layout_column="0"/>
+        <Button
+                android:layout_width="@dimen/quiz_button_width"
+                android:layout_height="@dimen/quiz_button_height"
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textStyle="bold"
+                android:textSize="@dimen/quiz_button_textsize"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/quizbuttonmagenta"
+                android:id="@+id/quizbutton4"
+                android:onClick="onClickQButton4"
+                android:layout_row="1"
+                android:layout_column="2"/>
+    </GridLayout>
+    <RelativeLayout
+            android:id="@+id/quiz_correct_or_incorrect_answer"
+            android:visibility="invisible"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+    </RelativeLayout>
+
+</RelativeLayout>

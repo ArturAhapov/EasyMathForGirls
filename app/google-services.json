@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "592278434860",
+    "firebase_url": "https://easy-math-39823103.firebaseio.com",
+    "project_id": "easy-math-39823103",
+    "storage_bucket": "easy-math-39823103.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592278434860:android:d6712c4446fc7d75",
+        "android_client_info": {
+          "package_name": "com.arturagapov.easymathforgirls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592278434860-18edqkpujp2f1r6rl90okbs7gihi3eda.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arturagapov.easymathforgirls",
+            "certificate_hash": "917503FB361221C59A4D14F304D79E9A5E222C29"
+          }
+        },
+        {
+          "client_id": "592278434860-bvnv6csen07od7j0cf0v9q028o9g3aoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA41ZnvxJNQ6dQLQC5zZOV7hPqP7sVyVOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592278434860-bvnv6csen07od7j0cf0v9q028o9g3aoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592278434860:android:83400d7a924234ee",
+        "android_client_info": {
+          "package_name": "com.arturagapov.easymath"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592278434860-tq5t735s9b6iocmu34ufb28jcitgfdem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arturagapov.easymath",
+            "certificate_hash": "917503FB361221C59A4D14F304D79E9A5E222C29"
+          }
+        },
+        {
+          "client_id": "592278434860-bvnv6csen07od7j0cf0v9q028o9g3aoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA41ZnvxJNQ6dQLQC5zZOV7hPqP7sVyVOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592278434860-bvnv6csen07od7j0cf0v9q028o9g3aoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592278434860:android:a4db9ac9cf30abbc",
+        "android_client_info": {
+          "package_name": "com.arturagapov.easymathpr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592278434860-vjommrep5hqs6ie8asta3jsjqpi624qf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arturagapov.easymathpr",
+            "certificate_hash": "917503FB361221C59A4D14F304D79E9A5E222C29"
+          }
+        },
+        {
+          "client_id": "592278434860-bvnv6csen07od7j0cf0v9q028o9g3aoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA41ZnvxJNQ6dQLQC5zZOV7hPqP7sVyVOU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592278434860-bvnv6csen07od7j0cf0v9q028o9g3aoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

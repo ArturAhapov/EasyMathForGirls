@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <solid android:color="@color/new_color_blue_SOFT" />
+
+    <corners android:radius="@dimen/button_rounded" />
+    <stroke
+            android:width="@dimen/button_stroke"
+            android:color="@color/new_color_blue_SOFT" />
+</shape>
+
+        <!-- Drop Shadow Stack
+        <item>
+        <shape>
+            <corners android:radius="@dimen/radius" />
+
+            <padding
+                    android:bottom="1dp"
+                    android:left="1dp"
+                    android:right="1dp"
+                    android:top="1dp" />
+
+            <solid android:color="#00CCCCCC" />
+        </shape>
+        </item>
+        <item>
+        <shape>
+            <corners android:radius="@dimen/radius" />
+
+            <padding
+                    android:bottom="1dp"
+                    android:left="1dp"
+                    android:right="1dp"
+                    android:top="1dp" />
+
+            <solid android:color="#10CCCCCC" />
+        </shape>
+        </item>
+        <item>
+        <shape>
+            <corners android:radius="@dimen/radius" />
+
+            <padding
+                    android:bottom="1dp"
+                    android:left="1dp"
+                    android:right="1dp"
+                    android:top="1dp" />
+
+            <solid android:color="#20CCCCCC" />
+        </shape>
+        </item>
+        <item>
+        <shape>
+            <corners android:radius="@dimen/radius" />
+
+            <padding
+                    android:bottom="1dp"
+                    android:left="1dp"
+                    android:right="1dp"
+                    android:top="1dp" />
+
+            <solid android:color="#30CCCCCC" />
+        </shape>
+        </item>
+
+                Background
+        <item>
+        <shape>
+            <gradient
+                    android:type="linear"
+                    android:endColor="@color/new_color_blue_MAIN"
+                    android:centerColor="@color/new_color_blue_MAIN"
+                    android:startColor="@color/new_color_blue_SOFT"
+                    android:angle="135"/>
+
+            <corners android:radius="@dimen/radius" />
+        </shape>
+        </item>
+        -->

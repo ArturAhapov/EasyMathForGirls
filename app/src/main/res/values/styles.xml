@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBlueLight</item>
+        <item name="colorPrimaryDark">@color/new_color_sky_MAIN</item>
+        <item name="colorAccent">@color/colorAzzure</item>
+    </style>
+    <!--RatingBar-->
+    <style name="MyRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/new_color_white_CLOUD</item>
+        <item name="colorControlActivated">@android:color/holo_orange_dark</item>
+    </style>
+
+</resources>

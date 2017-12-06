@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/board"
+        android:scaleType="fitXY"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".DifficultyActivity">
+
+    <TextView
+            android:id="@+id/text_choose_level"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPinkEmpty"
+            android:textSize="@dimen/titleText"
+            android:textStyle="bold"
+            android:text="@string/choose_level"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/choice_button_height"
+            android:layout_marginLeft="@dimen/margin_choice_button_horizontal"
+            android:layout_marginRight="@dimen/margin_choice_button_horizontal"
+            android:layout_below="@+id/text_choose_level"
+            android:layout_centerHorizontal="true"
+            android:text="@string/level_easy"
+            android:textStyle="bold"
+            android:textSize="@dimen/titleText"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/quizbuttongreen"
+            android:id="@+id/button_easy"
+            android:onClick="onClickEasy"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="@dimen/choice_button_height"
+            android:layout_marginLeft="@dimen/margin_choice_button_horizontal"
+            android:layout_marginRight="@dimen/margin_choice_button_horizontal"
+            android:layout_below="@+id/button_easy"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/level_mediume"
+            android:textStyle="bold"
+            android:textSize="@dimen/titleText"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonroundedgrey"
+            android:id="@+id/button_medium"
+            android:onClick="onClickMedium"/>
+    <Button android:layout_width="match_parent"
+            android:layout_height="@dimen/choice_button_height"
+            android:layout_marginLeft="@dimen/margin_choice_button_horizontal"
+            android:layout_marginRight="@dimen/margin_choice_button_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_medium"
+            android:text="@string/level_hard"
+            android:textStyle="bold"
+            android:textSize="@dimen/titleText"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/buttonroundedgrey"
+            android:id="@+id/button_advanced"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickAdvanced"/>
+    <ImageView
+            android:src="@drawable/new_bottom_clouds_back"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitEnd"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+

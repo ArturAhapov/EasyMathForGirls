@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_background_sky"
+        tools:context=".Lessons.Lesson1Activity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/level1_bottom"
+            android:id="@+id/scroll_lesson1">
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/activity_horizontal_fifth_margin"
+                android:layout_marginBottom="@dimen/activity_horizontal_triple_margin"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/lesson_1_text_01"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_02"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_03"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_04"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_05"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_06"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_07"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_08"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_09"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_10"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/lesson_1_text_11"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:shadowColor="@color/shadow"
+                    android:shadowDx="@integer/shadowDx"
+                    android:shadowDy="@integer/shadowDy"
+                    android:shadowRadius="@integer/shadowRadius"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
+            android:src="@drawable/new_bottom_clouds_front"
+            android:layout_above="@+id/level1_bottom"
+            android:scaleType="fitEnd"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:id="@+id/level1_bottom"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:background="@color/new_color_white_CLOUD"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/next_lesson1"
+                android:text="@string/next"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:textSize="@dimen/titleText"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/new_button_yellow"
+                android:onClick="onClickNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!--Clouds-->
+    <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/clouds"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/lesson1"
+                android:text="@string/lesson1"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@color/new_color_blue_SOFT"
+                android:background="@color/new_color_white_CLOUD"
+                android:layout_gravity="end|right"
+                android:gravity="end|right"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/bottom_cloud_back"
+                    android:rotationX="180"
+                    android:src="@drawable/new_bottom_clouds_back"
+                    android:scaleType="fitEnd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView
+                    android:src="@drawable/new_bottom_clouds_front"
+                    android:rotationX="180"
+                    android:scaleType="fitEnd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

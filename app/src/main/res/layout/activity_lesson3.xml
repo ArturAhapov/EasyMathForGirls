@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/new_background_sky"
+        tools:context=".Lessons.Lesson3Activity">
+    <!--Ballons-->
+    <LinearLayout
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Space
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        <ImageView
+                android:id="@+id/ballon01"
+                android:visibility="invisible"
+                android:src="@drawable/ballon_red"
+                android:layout_width="@dimen/ballons_width"
+                android:layout_height="@dimen/ballons_height"/>
+        <Space
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        <ImageView
+                android:id="@+id/ballon02"
+                android:visibility="invisible"
+                android:src="@drawable/ballon_green"
+                android:layout_width="@dimen/ballons_width"
+                android:layout_height="@dimen/ballons_height"/>
+        <Space
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/lesson_3_question"
+                android:padding="@dimen/activity_horizontal_half_margin"
+                android:layout_margin="@dimen/activity_horizontal_half_margin"
+                android:text="1 + 2 = "
+                android:textColor="@color/colorWhite"
+                android:shadowColor="@color/shadow"
+                android:shadowDx="@integer/shadowDx"
+                android:shadowDy="@integer/shadowDy"
+                android:shadowRadius="@integer/shadowRadius"
+                android:textSize="@dimen/lesson3Text"
+                android:textStyle="bold"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/lesson3_answer"
+                android:padding="@dimen/activity_horizontal_half_margin"
+                android:layout_margin="@dimen/activity_horizontal_half_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:text="3"
+                android:textStyle="bold"
+                android:textSize="@dimen/lesson3Text"
+                android:shadowColor="@color/shadow"
+                android:shadowDx="@integer/shadowDx"
+                android:shadowDy="@integer/shadowDy"
+                android:shadowRadius="@integer/shadowRadius"
+                android:textColor="@color/colorWhite"
+                android:visibility="invisible"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--<LinearLayout
+            android:id="@+id/lesson3_nativeAdmobAds_layout"
+            android:layout_above="@+id/answer_buttons"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@color/new_color_white_CLOUD"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/lesson3_nativeAdmobAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                ads:adSize="360x100"
+                ads:adUnitId="ca-app-pub-1399393260153583/1009852359">
+        </com.google.android.gms.ads.NativeExpressAdView>
+    </LinearLayout>-->
+
+    <RelativeLayout
+            android:id="@+id/answer_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <Button
+                    android:layout_width="@dimen/quiz_button_CLOUD_width"
+                    android:layout_height="@dimen/quiz_button_CLOUD_height"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_half_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_half_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/quiz_button_textsize"
+                    android:textColor="@color/new_color_sky_MAIN"
+                    android:background="@drawable/new_cloud_botton"
+                    android:id="@+id/lesson3Answer1"
+                    android:onClick="onClickLesson3Answer1"
+            />
+            <Button
+                    android:layout_width="@dimen/quiz_button_CLOUD_width"
+                    android:layout_height="@dimen/quiz_button_CLOUD_height"
+                    android:layout_marginRight="@dimen/activity_horizontal_half_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_half_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_half_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_half_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/quiz_button_textsize"
+                    android:textColor="@color/new_color_sky_MAIN"
+                    android:background="@drawable/new_cloud_botton"
+                    android:id="@+id/lesson3Answer2"
+                    android:onClick="onClickLesson3Answer2"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--Clouds-->
+    <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/clouds"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/lesson3"
+                android:text="@string/lesson3"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@color/new_color_blue_SOFT"
+                android:background="@color/new_color_white_CLOUD"
+                android:layout_gravity="end|right"
+                android:gravity="end|right"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/new_color_white_CLOUD"
+                android:progressTint="@color/new_color_blue_SOFT"
+                android:secondaryProgress="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lesson3progressBar"/>
+        <RelativeLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/bottom_cloud_back"
+                    android:rotationX="180"
+                    android:src="@drawable/new_bottom_clouds_back"
+                    android:scaleType="fitEnd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView
+                    android:src="@drawable/new_bottom_clouds_front"
+                    android:rotationX="180"
+                    android:scaleType="fitEnd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/correct_or_incorrect_answer"
+            android:visibility="invisible"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+    </RelativeLayout>
+
+</RelativeLayout>

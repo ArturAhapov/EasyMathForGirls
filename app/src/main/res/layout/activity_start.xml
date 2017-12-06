@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/new_background_sky"
+        tools:context="com.arturagapov.easymathforgirls.StartActivity">
+    <!--Background pictures-->
+    <RelativeLayout
+            android:id="@+id/background_pictures"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/image_sun"
+                android:src="@drawable/sun"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-48dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginStart="64dp"
+                android:visibility="invisible"
+                android:layout_width="0dp" android:layout_height="0dp"/>
+        <ImageView
+                android:id="@+id/image_left"
+                android:src="@drawable/back_cloud_left"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="32dp"
+                android:visibility="invisible"
+                android:layout_width="0dp" android:layout_height="0dp"/>
+        <ImageView
+                android:id="@+id/image_right"
+                android:src="@drawable/back_cloud_right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="-24dp"
+                android:layout_marginEnd="-24dp"
+                android:visibility="invisible"
+                android:layout_width="0dp" android:layout_height="0dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:contentDescription="@string/logo"
+            android:gravity="center"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/logo1"
+                android:text="Math"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/logoText"
+                android:textColor="@color/new_color_white_CLOUD"
+                android:visibility="invisible"
+                android:shadowColor="@color/shadow"
+                android:shadowDx="@integer/shadowDx"
+                android:shadowDy="@integer/shadowDy"
+                android:shadowRadius="@integer/shadowRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/logo2"
+                android:text="for"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/titleText"
+                android:textColor="@color/new_color_white_CLOUD"
+                android:visibility="invisible"
+                android:shadowColor="@color/shadow"
+                android:shadowDx="@integer/shadowDx"
+                android:shadowDy="@integer/shadowDy"
+                android:shadowRadius="@integer/shadowRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/logo3"
+                android:text="Girls"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/logoText"
+                android:textColor="@color/new_color_white_CLOUD"
+                android:visibility="invisible"
+                android:shadowColor="@color/shadow"
+                android:shadowDx="@integer/shadowDx"
+                android:shadowDy="@integer/shadowDy"
+                android:shadowRadius="@integer/shadowRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!--Buttons-->
+    <LinearLayout
+            android:id="@+id/start_activity_buttons"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/game_start"
+                android:text="@string/start_the_game"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:textSize="@dimen/titleText"
+                android:layout_marginTop="@dimen/activity_horizontal_half_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/new_button_yellow"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:onClick="onClickStart"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/login"
+                android:text="@string/login_in"
+                android:textColor="@color/new_color_white_CLOUD"
+                android:textStyle="bold"
+                android:textSize="@dimen/titleText"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/new_button_white_empty"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!--Clouds-->
+    <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/bottom_cloud_back"
+                android:rotationX="180"
+                android:src="@drawable/new_bottom_clouds_back"
+                android:scaleType="fitEnd"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView
+                android:src="@drawable/new_bottom_clouds_front"
+                android:rotationX="180"
+                android:scaleType="fitEnd"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

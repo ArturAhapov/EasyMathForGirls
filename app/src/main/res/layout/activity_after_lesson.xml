@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:background="@color/colorWhite"
+        tools:context="com.arturagapov.easymathforgirls.AfterLessonActivity">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/achievements"
+                    android:text="@string/achievements"
+                    android:textColor="@color/colorPinkDark"
+                    android:textSize="@dimen/titleText"
+                    android:textStyle="bold"
+                    android:onClick="onClickAchievements"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/leaderboard"
+                    android:text="@string/leaderboard"
+                    android:textColor="@color/colorPinkDark"
+                    android:textSize="@dimen/titleText"
+                    android:textStyle="bold"
+                    android:onClick="onClickLeaderboard"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!--<ImageView
+                android:src="@drawable/clouds"
+                android:scaleType="fitEnd"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>-->
+        <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="@string/congrates"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/colorAzzure"
+                        android:layout_marginTop="8dp"
+                        android:textSize="@dimen/bigText"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <ImageView
+                        android:id="@+id/after_image_smile"
+                        android:src="@drawable/smile_happy_1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_width="140dp" android:layout_height="140dp"/>
+                <TextView
+                        android:id="@+id/you_complete_this_lesson"
+                        android:textColor="@color/colorAzzure"
+                        android:text="@string/you_complete_lesson_without_wrong"
+                        android:textSize="@dimen/textSize_meaning"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/you_scored"
+                            android:textColor="@color/colorAzzure"
+                            android:textStyle="bold"
+                            android:text="@string/you_scored"
+                            android:textSize="@dimen/textSize_meaning"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/after_score"
+                            android:textColor="@color/colorAzzure"
+                            android:text="0"
+                            android:textSize="@dimen/textSize_meaning"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:paddingRight="8dp"
+                            android:paddingLeft="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/points"
+                            android:textColor="@color/colorAzzure"
+                            android:text="@string/points"
+                            android:textSize="@dimen/textSize_meaning"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:paddingRight="@dimen/activity_horizontal_margin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <TextView
+                        android:id="@+id/we_recommend"
+                        android:textColor="@color/colorAzzure"
+                        android:textSize="@dimen/textSize_meaning"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <GridLayout
+                        android:id="@+id/answer_buttons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:columnCount="2">
+
+                    <Button
+                            android:layout_width="@dimen/quiz_button_width"
+                            android:layout_height="@dimen/choice_button_height"
+                            android:text="@string/try_again"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/margin_between_buttons_horizontal"
+                            android:textSize="@dimen/titleText"
+                            android:textColor="@color/colorPinkDark"
+                            android:background="@drawable/quizbutton"
+                            android:id="@+id/try_again"
+                            android:onClick="onClickTryAgain"
+                            android:layout_column="0"/>
+                    <Button
+                            android:layout_width="@dimen/quiz_button_width"
+                            android:layout_height="@dimen/choice_button_height"
+                            android:text="@string/tap_to_continue"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:layout_marginLeft="@dimen/margin_between_buttons_horizontal"
+                            android:textSize="@dimen/titleText"
+                            android:textColor="@color/colorPinkDark"
+                            android:background="@drawable/quizbutton"
+                            android:id="@+id/after_continue"
+                            android:onClick="onClickContinueAfterLesson"
+                            android:layout_column="1"/>
+                </GridLayout>
+
+                <com.google.android.gms.ads.NativeExpressAdView
+                        android:id="@+id/nativeAdmobAds_after_lesson_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        ads:adSize="360x320"
+                        ads:adUnitId="ca-app-pub-1399393260153583/4037907157">
+                </com.google.android.gms.ads.NativeExpressAdView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+            android:id="@+id/after_lesson_fon"
+            android:background="@color/colorPinkEmpty"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+
+    </RelativeLayout>
+</RelativeLayout>

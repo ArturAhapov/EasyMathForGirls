@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Математика для Девочек</string>
+    <string name="button_plus">СЛОЖЕНИЕ</string>
+    <string name="button_minus">ВЫЧИТАНИЕ</string>
+    <string name="button_multiply">УМНОЖЕНИЕ</string>
+    <string name="button_division">ДЕЛЕНИЕ</string>
+    <string name="score">Счет</string>
+    <string name="from">из</string>
+    <string name="start_new_game">НОВЫЙ УРОК</string>
+    <string name="record_overall">РЕКОРД</string>
+    <string name="record_today">НАБРАНО</string>
+    <string name="record_points">ОЧКОВ</string>
+    <string name="question">Вопрос</string>
+    <string name="right_answer">Правильно!</string>
+    <string name="wrong_answer">Неправильно!</string>
+    <string name="right_answer_is">Правильный ответ:</string>
+    <string name="advise">Использование приложение 3-5 раз в день способствует развивитию интеллекта ребенка,
+        способности ориентироваться в пространстве и таких понятий, как размер и форма, логические и
+        арифметические операции. Эти первые эталоны помогают ребенку полноценно осваивать окружающий мир.
+    </string>
+    <string name="unit_complete">Урок\nпройден</string>
+    <string name="clouds">облако</string>
+    <string name="more_apps">Другие приложения</string>
+    <string name="rate_app">ОЦЕНИТЬ ПРИЛОЖЕНИЕ</string>
+    <string name="choose_level">Выберите уровень\nсложности</string>
+    <string name="level_easy">ЛЁГКИЙ</string>
+    <string name="level_hard">ПРОДВИНУТЫЙ</string>
+    <string name="level_mediume">СРЕДНИЙ</string>
+    <string name="achievements">Достижения</string>
+    <string name="choose_to_continue">Выберите, чтобы продолжить</string>
+    <string name="congrates">ПОЗДРАВЛЯЕМ!</string>
+    <string name="leaderboard">Лидеры</string>
+    <string name="learn">Обучение</string>
+    <string name="lesson1">Урок 1/3</string>
+    <string name="lesson3">Урок 3/3</string>
+    <string name="lesson2">Урок 2/3</string>
+    <string name="lesson_complete">Урок\nокончен!</string>
+    <string name="login_in">Войти в Play Игры</string>
+    <string name="login_out">Выйти из Play Игр</string>
+    <string name="logo">логотип</string>
+    <string name="more">Больше</string>
+    <string name="next">Далее</string>
+    <string name="points">очков.</string>
+    <string name="practice">Практика</string>
+    <string name="rate">Оценить</string>
+    <string name="rate_later">Позже</string>
+    <string name="rate_text">Благодарим Вас за использование данного приложения. Надеемся, оно Вам, действительно,
+        нравится. Если так, пожалуйста, оставьте о нём отзыв в магазине приложений. Мы ценим Вашу поддержку!
+    </string>
+    <string name="rate_the_app">Оценить приложение</string>
+    <string name="start_the_game">Начать</string>
+    <string name="tap_to_continue">Продолжить</string>
+    <string name="try_again">Повторить</string>
+    <string name="try_another">Попробуйте пройти еще один!</string>
+    <string name="you_complete_lesson_with_wrong">К сожалению, Вы закончили урок с ошибками.\nМы рекомендуем Вам пройти
+        его снова.
+    </string>
+    <string name="you_complete_lesson_without_wrong">Вы закончили урок без ошибок!</string>
+    <string name="you_scored">Вы набрали</string>
+    <string name="app_misconfigured">The application is incorrectly configured. Check that the package name and signing
+        certificate match the client ID created in Developer Console. Also, if the application is not yet published,
+        check that the account you are trying to sign in with is listed as a tester account. See logs for more
+        information.
+    </string>
+    <string name="because_of_it_your_time_bonus">Поэтому Ваш бонус за скорость прохождения составил</string>
+    <string name="total_score">Всего Вы набрали</string>
+    <string name="you_complete_unit_with_wrong">К сожалению, Вы закончили эту практику с ошибками.\nМы рекомендуем Вам
+        пройти её снова.
+    </string>
+    <string name="you_complete_unit_without_wrong">Вы закончили практику без ошибок!</string>
+    <string name="your_practice_score">В этой практике Вы набрали</string>
+    <string name="you_complete_practice_without_wrong">Вы закончили эту практику с ошибками!</string>
+    <string name="its_time">Время попрактиковать математику!</string>
+    <string name="available_difficulty">2. Доступно больше уровней сложности</string>
+    <string name="available_division">1. Доступно изучение и практика математического действия "Деление"</string>
+    <string name="available_in_pro">Доступно в Премиум версии</string>
+    <string name="get_pro">Премиум</string>
+    <string name="thats_why">Мы рекомендуем Вам купить Премиум "Математика - Легко!"\nИ вот почему:</string>
+    <string name="you_will">Вы получите больше уровней сложности для практики и развития своих математических способностей, в том числе,
+        с большими числами!\n...и наберете больше очков, необходимых для победы над другими пользователями...
+    </string>
+    <string name="no_ads">3. Не будет никакой рекламы!</string>
+    <string name="go_back">Назад</string>
+
+</resources>

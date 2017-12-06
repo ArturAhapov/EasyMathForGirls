@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="new_color_sky_MAIN">#56ACC3</color>
+    <color name="new_color_sky_SOFT">#a5d9e9</color>
+    <color name="new_color_blue_MAIN">#1976D2</color>
+    <color name="new_color_blue_SOFT">#2196F3</color>
+    <color name="new_color_green_MAIN">#46C064</color>
+    <color name="new_color_green_SOFT">#44DB63</color>
+    <color name="new_color_yellow_MAIN">#FBC02D</color>
+    <color name="new_color_yellow_SOFT">#FFEB3B</color>
+    <color name="new_color_red_MAIN">#C00C25</color>
+    <color name="new_color_red_SOFT">#EC1C26</color>
+    <color name="new_color_magenta_MAIN">#cb10d0</color>
+    <color name="new_color_pink_MAIN">#ff3aa7</color>
+    <color name="new_color_white_DARK">#e6e6e6</color>
+    <color name="new_color_white_DARK_DARK">#aaaeaf</color>
+    <color name="textColorLIGHT">#aaaeaf</color>
+    <color name="new_color_white_CLOUD">#f2f2f2</color>
+    <color name="shadow">#879194</color>
+    <color name="colorBlueLight">#03a9f4</color>
+    <color name="colorBlueGrey">#aaaeaf</color>
+
+    <color name="colorMagenta">#cb10d0</color>
+    <color name="colorRed">#de0f1c</color>
+
+    <color name="colorAzzure">#4FC3F7</color>
+    <color name="lime">#cddc39</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDashBoard">#336c3e</color>
+    <color name="colorPink">#ff3aa7</color>
+    <color name="colorPinkDark">#d6318c</color>
+    <color name="colorPinkEmpty">#6dff3aa7</color>
+    <color name="colorFonEmpty">#96386941</color>
+    <color name="questionText">#FFFFFF</color>
+    <color name="text">#FFFFFF</color>
+    <color name="quiz_buttons_text_color">#FFFFFF</color>
+</resources>

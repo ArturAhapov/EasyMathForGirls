@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:clickable="true"
+              android:focusableInTouchMode="true"
+              android:layout_width="300dp"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--Stars-->
+        <RelativeLayout
+                android:background="@drawable/new_background_sky"
+                android:layout_width="match_parent" android:layout_height="100dp">
+            <ImageView
+                    android:src="@drawable/ic_favorite_border_white_24dp"
+                    android:tint="@color/new_color_sky_SOFT"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="22dp" android:layout_height="22dp"/>
+            <ImageView
+                    android:src="@drawable/ic_favorite_white_24dp"
+                    android:tint="@color/new_color_sky_SOFT"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_width="18dp" android:layout_height="18dp"/>
+            <ImageView
+                    android:src="@drawable/ic_favorite_border_white_24dp"
+                    android:tint="@color/new_color_sky_SOFT"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="86dp"
+                    android:layout_marginEnd="86dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="20dp" android:layout_height="20dp"/>
+            <ImageView
+                    android:src="@drawable/ic_favorite_white_24dp"
+                    android:tint="@color/new_color_sky_SOFT"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="18dp" android:layout_height="18dp"/>
+            <ImageView
+                    android:src="@drawable/ic_favorite_border_white_24dp"
+                    android:tint="@color/new_color_sky_SOFT"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView
+                    android:src="@drawable/ic_favorite_white_24dp"
+                    android:tint="@color/new_color_sky_SOFT"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="16dp" android:layout_height="16dp"/>
+            <!--Big Stars-->
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+                        android:src="@drawable/star_no_smile"
+                        android:layout_width="@dimen/star_1_size" android:layout_height="@dimen/star_1_size"/>
+                <ImageView
+                        android:src="@drawable/star_no_smile"
+                        android:layout_width="@dimen/star_2_size" android:layout_height="@dimen/star_2_size"/>
+                <ImageView
+                        android:src="@drawable/star_smile"
+                        android:layout_width="@dimen/star_3_size" android:layout_height="@dimen/star_3_size"/>
+                <ImageView
+                        android:src="@drawable/star_no_smile"
+                        android:layout_width="@dimen/star_2_size" android:layout_height="@dimen/star_2_size"/>
+                <ImageView
+                        android:src="@drawable/star_no_smile"
+                        android:layout_width="@dimen/star_1_size" android:layout_height="@dimen/star_1_size"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+                android:text="@string/rate_app_dialog"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <!--Buttons-->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/not_now_button"
+                    android:text="@string/not_now"
+                    android:textColor="@color/new_color_pink_MAIN"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/activity_vertical_margin"
+                    android:layout_weight="1"/>
+            <TextView
+                    android:id="@+id/rate_5_star_button"
+                    android:text="@string/rate_5_star"
+                    android:textColor="@color/new_color_pink_MAIN"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

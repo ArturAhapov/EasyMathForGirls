@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/new_background_sky"
+        tools:context=".Lessons.Lesson2Activity">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_fifth_margin"
+            android:layout_above="@+id/level2_bottom"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/lesson_2_question"
+                android:text="1 + 2 = "
+                android:textColor="@color/colorWhite"
+                android:shadowColor="@color/shadow"
+                android:shadowDx="@integer/shadowDx"
+                android:shadowDy="@integer/shadowDy"
+                android:shadowRadius="@integer/shadowRadius"
+                android:textSize="@dimen/lesson2Text"
+                android:textStyle="bold"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <Button
+                android:layout_width="@dimen/quiz_button_height"
+                android:layout_height="@dimen/quiz_button_height"
+                android:text="3"
+                android:textStyle="bold"
+                android:textSize="@dimen/lesson2Text"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/buttonroundedblue"
+                android:onClick="onClickNextAnswer"
+                android:id="@+id/lesson_2_answer"/>
+    </LinearLayout>
+
+    <ImageView
+            android:src="@drawable/new_bottom_clouds_front"
+            android:layout_above="@+id/level2_bottom"
+            android:scaleType="fitEnd"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout
+            android:id="@+id/level2_bottom"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:background="@color/new_color_white_CLOUD"
+            android:layout_width="match_parent" android:layout_height="100dp">
+        <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/lesson2_nativeAdmobAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                ads:adSize="360x100"
+                ads:adUnitId="ca-app-pub-1399393260153583/8812320756">
+        </com.google.android.gms.ads.NativeExpressAdView>
+
+        <Button
+                android:id="@+id/next_lesson2"
+                android:visibility="invisible"
+                android:text="@string/next"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+                android:textSize="@dimen/titleText"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/new_button_yellow"
+                android:layout_gravity="center_horizontal|bottom"
+                android:onClick="onClickNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <!--Clouds-->
+    <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/clouds"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/lesson2"
+                android:text="@string/lesson2"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:textColor="@color/new_color_blue_SOFT"
+                android:background="@color/new_color_white_CLOUD"
+                android:layout_gravity="end|right"
+                android:gravity="end|right"
+                android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:background="@color/new_color_white_CLOUD"
+                android:progressTint="@color/new_color_blue_SOFT"
+                android:secondaryProgress="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lesson2progressBar"/>
+        <RelativeLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/bottom_cloud_back"
+                    android:rotationX="180"
+                    android:src="@drawable/new_bottom_clouds_back"
+                    android:scaleType="fitEnd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView
+                    android:src="@drawable/new_bottom_clouds_front"
+                    android:rotationX="180"
+                    android:scaleType="fitEnd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

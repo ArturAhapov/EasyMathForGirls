@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/dialog_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorWhite"
+                tools:context="com.arturagapov.easymathforgirls.Lessons.Lesson3Activity">
+    <ImageView
+            android:id="@+id/image_left_bottom"
+            android:src="@drawable/image_right_center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="160dp" android:layout_height="160dp"/>
+    <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/dialog_text"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lesson_complete"
+                    android:textSize="@dimen/bigText"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAzzure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+                android:id="@+id/image_smile"
+                android:src="@drawable/smile_happy_3"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_width="160dp" android:layout_height="160dp"/>
+    </LinearLayout>
+</RelativeLayout>
